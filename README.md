@@ -87,7 +87,7 @@ To run this project locally:
 
 This is the main HTML file where the color palette is displayed. It contains:
 
-- A container (<ul>) that holds all color boxes.
+- A container`(<ul>)`that holds all color boxes.
 
 - A button to refresh the palette.
 
