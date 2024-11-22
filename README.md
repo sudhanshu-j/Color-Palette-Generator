@@ -23,8 +23,6 @@ This is a simple **Color Palette Generator** that allows users to view a random 
 
 ## Features
 
-## Features
-
 - **Random Color Generation**: Generates a set of 30 random color boxes with unique hex codes.
 
 - **Copy Color Hex Code**: Click any color box to copy its hex code to the clipboard.
@@ -36,7 +34,7 @@ This is a simple **Color Palette Generator** that allows users to view a random 
 
 ## Demo
 
-You can view a live demo of this project by visiting the [live demo link](#).
+You can view a live demo of this project by visiting the [live demo link](https://color-palette-gene.netlify.app/).
 
 
 ## Technologies Used
