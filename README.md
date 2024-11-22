@@ -156,13 +156,13 @@ Contributions are welcome! If you find a bug or have suggestions for improvement
 ```
 
 3. **Make your changes and commit them:**
-   ```bash
-    (git commit -am 'Add new feature').
-   ```
+```bash
+   (git commit -am 'Add new feature').
+```
 
 4.**Push to the branch:** 
 ```bash
-(git push origin feature-branch).
+   (git push origin feature-branch).
 ```
 
 5. **Open a pull request.**
