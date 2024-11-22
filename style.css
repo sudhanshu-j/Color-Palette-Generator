@@ -1,0 +1,109 @@
+/* Import Google font */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"); /* Imports the Mukta font family with various font weights from Google Fonts */
+
+* {
+  margin: 0; /* Removes default margin for all elements */
+  padding: 0; /* Removes default padding for all elements */
+  box-sizing: border-box; /* Ensures padding and borders are included in element width/height */
+  font-family: "Mukta", sans-serif; /* Sets the imported font as the default for all text */
+}
+
+body {
+  background: #28292a; /* Sets a dark background color for the page */
+}
+
+.container {
+  margin: 20px; /* Adds margin around the container */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers items horizontally within the container */
+  flex-wrap: wrap; /* Allows flex items to wrap to the next line if needed */
+}
+
+.container .color {
+  margin: 12px; /* Adds spacing around each color item */
+  padding: 7px; /* Adds padding inside each color item */
+  list-style: none; /* Removes default list styling */
+  cursor: pointer; /* Changes cursor to pointer to indicate item is clickable */
+  text-align: center; /* Centers text inside each color item */
+  background: #b6b6b6; /* Sets a light gray background for each color item */
+  border-radius: 8px; /* Rounds the corners of each color item */
+  box-shadow: 0 10px 25px rgba(52, 87, 220, 0.08); /* Adds a subtle shadow for depth */
+  transition: all 0.3s ease; /* Adds smooth transition effect for all properties */
+}
+
+.container .color:active {
+  transform: scale(0.95); /* Slightly shrinks the item when active (clicked) */
+}
+
+.color .rect-box {
+  width: 185px; /* Sets width of the rectangular color box */
+  height: 188px; /* Sets height of the rectangular color box */
+  border: 0.5px solid #7f7f7f; /* Adds a thin border with a light gray color */
+  border-radius: 8px; /* Rounds the corners of the rectangular box */
+}
+
+.color:hover .rect-box {
+  filter: brightness(
+    107%
+  ); /* Slightly increases brightness on hover for emphasis */
+}
+
+.color .hex-value {
+  display: block; /* Displays hex-value as a block element */
+  color: #191616; /* Sets text color to a dark shade */
+  user-select: none; /* Prevents text from being selectable */
+  font-weight: 500; /* Sets a medium font weight */
+  font-size: 1.15rem; /* Sets font size */
+  margin: 12px 0 8px; /* Adds vertical spacing around the text */
+  text-transform: uppercase; /* Transforms text to uppercase */
+}
+
+.refresh-btn {
+  position: fixed; /* Fixes the button position relative to the viewport */
+  left: 50%; /* Centers the button horizontally */
+  bottom: 40px; /* Positions the button 40px from the bottom of the screen */
+  color: #fff; /* Sets text color to white */
+  cursor: pointer; /* Changes cursor to pointer to indicate button is clickable */
+  outline: none; /* Removes default outline on focus */
+  font-weight: 500; /* Sets a medium font weight for button text */
+  font-size: 1.1rem; /* Sets font size of button text */
+  border-radius: 5px; /* Rounds the button corners */
+  background: #36a2e1da; /* Sets a semi-transparent blue background color */
+  padding: 13px 20px; /* Adds padding inside the button for better click area */
+  border: 2px solid #fff; /* Adds a white border around the button */
+  transform: translateX(-50%); /* Adjusts the button to perfectly center it */
+  box-shadow: 0 15px 30px rgba(52, 87, 220, 0.2); /* Adds a shadow to lift the button */
+  transition: all 0.3s ease; /* Adds smooth transition effect for all properties */
+}
+
+.refresh-btn:hover {
+  background: #1b71a4; /* Changes background color on hover for effect */
+}
+
+@media screen and (max-width: 500px) {
+  /* Applies styles when the screen width is 500px or less */
+  .container {
+    margin: 10px; /* Reduces margin around the container */
+  }
+
+  .container .color {
+    margin: 8px; /* Reduces spacing around each color item */
+    padding: 5px; /* Reduces padding inside each color item */
+    width: calc(
+      100% / 2 - 20px
+    ); /* Adjusts width of color items for better fit on small screens */
+  }
+
+  .color .rect-box {
+    width: 100%; /* Sets color box width to 100% of its container */
+    height: 148px; /* Reduces height of the color box */
+  }
+
+  .color .hex-value {
+    font-size: 1.05rem; /* Reduces font size for better readability on small screens */
+  }
+
+  .refresh-btn {
+    font-size: 1rem; /* Reduces font size of button text */
+  }
+}
