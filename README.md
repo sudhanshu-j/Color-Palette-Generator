@@ -83,7 +83,7 @@ To run this project locally:
 
 ## Code Analysis
 
-### index.html
+### HTML
 
 This is the main HTML file where the color palette is displayed. It contains:
 
@@ -91,7 +91,7 @@ This is the main HTML file where the color palette is displayed. It contains:
 
 - A button to refresh the palette.
 
-### style.css
+### CSS
 
 The CSS file applies styling to give the app its visual layout and effects:
 
