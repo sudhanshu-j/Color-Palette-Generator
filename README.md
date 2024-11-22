@@ -160,7 +160,7 @@ Contributions are welcome! If you find a bug or have suggestions for improvement
    (git commit -am 'Add new feature').
 ```
 
-4.**Push to the branch:** 
+4. **Push to the branch:** 
 ```bash
    (git push origin feature-branch).
 ```
